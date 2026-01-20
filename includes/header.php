@@ -19,19 +19,15 @@
                 <li class="nav-item"><a class="nav-link" href="#">Link 2</a></li>
                 <li class="nav-item"><a class="nav-link" href="#">Link 3</a></li>
 
-                <!-- Dropdown Start -->
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
-                        Dropdown
-                    </a>
-                    <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">Drop 1</a></li>
-                        <li><a class="dropdown-item" href="#">Drop 2</a></li>
-                        <li><a class="dropdown-item" href="#">Drop 3</a></li>
-                    </ul>
+                <?php
 
-                </li>
-                <!-- Dropdown End -->
+                if(isset($_SESSION["user"])){
+
+                }else{
+                    echo '<li class="nav-item"><a class="nav-link" href="login.php">Login</a></li>';
+                }
+
+                ?>
 
             </ul>
 
